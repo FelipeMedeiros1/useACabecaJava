@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<html lang="pt-br"><!doctype html>
+    <head>
+        <title>MAPA Java</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: darkblue;
+            }
+
+            section {
+                background-color: rgba(255, 255, 255, 0.794);
+                width: 500px;
+                margin: 30px auto;
+                padding: 5px 10px;
+            }
+            fieldset {
+                margin: 1em 0;
+                padding: 2em;
+            }
+            legend {
+                font-weight: bold;
+            }
+
+            label {
+                display: block;
+                cursor: pointer;
+            }
+            input[type="text"]{
+                width: 20em;
+            }
+
+            input {
+                margin: 5px;
+                padding: 5px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <form method="POST" action="./Calcula">
+                <fieldset>
+                    <legend>Calculo Km rodado</legend>
+                    
+                    <label for="modelo"> Modelo do carro:</label>
+                    <input type="text" name="modelo" id="modelo" placeholder="ex: fusca" required="required">
+
+                    <label for="valorCombustivel"> Valor combustível:</label>
+                    <input type="text" name="valorCombustivel" id="valorCombustivel" placeholder="ex: 3.15" required="required" >
+
+                    <label for="quilometroLitro"> Quantidade Km/L:</label>
+                    <input type="text" name="quilometroLitro" id="quilometroLitro" placeholder="ex: 12.7" required="required">
+
+                    <label for="valorRevisao"> Valor médio da revisão a cada 10 mil km:</label>
+                    <input type="text" name="valorRevisao" id="valorRevisao"  placeholder="ex: 600" required="required">
+
+                    <label for="valorPneu"> Valor de 4 pneus que rodam 50 mil km:</label>
+                    <input type="text" name="valorPneu" id="valorPneu" placeholder="ex: 3500" required="required">
+                    
+                     <label for="distancia"> Qual distância será percorrida?</label>
+                     <input type="text" name="distancia" id="distancia" placeholder="ex: 57.3" required="required">
+                    
+                    <label>Estima-se acréscimo de 15% no cálculo do Km rodado por desgaste e desvalorização do veículo.</label>
+                    <input type="submit" value="Calcular">
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
