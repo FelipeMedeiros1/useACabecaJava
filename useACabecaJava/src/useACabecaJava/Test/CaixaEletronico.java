@@ -5,20 +5,20 @@ package useACabecaJava.Test;
 //
 //	public void depositar(double dinheiro) {
 //		this.dinheiro += dinheiro;
-//		System.out.print("Depósito realizado com sucesso   ");
+//		System.out.print("Depï¿½sito realizado com sucesso   ");
 //		System.out.print("Foi depositado: R$" + dinheiro);
-//		System.out.println("  Seu saldo é de " + this.dinheiro);
+//		System.out.println("  Seu saldo ï¿½ de " + this.dinheiro);
 //	}
 //
 //	public void sacar(double dinheiro) {
 //		if (dinheiro > this.dinheiro) {
-//			System.out.print("O caixa não possui essa quantia");
-//			System.out.println("   Seu saldo é de " + this.dinheiro);
+//			System.out.print("O caixa nï¿½o possui essa quantia");
+//			System.out.println("   Seu saldo ï¿½ de " + this.dinheiro);
 //		} else {
 //			this.dinheiro -= dinheiro;
 //			System.out.print("Saque realizado com sucesso   ");
 //			System.out.print("     Foi sacado: R$" + dinheiro);
-//			System.out.println("  Seu saldo é de " + this.dinheiro);
+//			System.out.println("  Seu saldo ï¿½ de " + this.dinheiro);
 //
 //		}
 //	}
@@ -30,23 +30,23 @@ package useACabecaJava.Test;
 //		caixa.sacar(300);
 //		caixa.sacar(300);
 
-class AcessoRestrito {
+//class AcessoRestrito {
 
-	public static void acessar(boolean a, boolean b, boolean c, boolean d) {
-		boolean temAcesso = !(a || d) && c && ((a && (!b || d)) || c);
-		if (temAcesso) {
-			System.out.println("Sim");
-		} else {
-			System.out.println("Não");
+	//public static void acessar(boolean a, boolean b, boolean c, boolean d) {
+	//boolean temAcesso = !(a || d) && c && ((a && (!b || d)) || c);
+	//if (temAcesso) {
+			//System.out.println("Sim");
+		//} else {
+			//System.out.println("Nï¿½o");
 
-		}
-	}
+		//}
+	//}
 
-	public static void main(String[] parametros) {
-		acessar(true, true, true, true);
-		acessar(true, false, true, false);
-		acessar(false, true, true, false);
-		acessar(false, true, false, true);
-		acessar(false, false, false, false);
-	}
-}
+	//public static void main(String[] parametros) {
+		//acessar(true, true, true, true);
+		//acessar(true, false, true, false);
+		//acessar(false, true, true, false);
+		//acessar(false, true, false, true);
+		//acessar(false, false, false, false);
+	//}
+//}
